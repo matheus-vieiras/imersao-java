@@ -13,7 +13,7 @@ public class App {
         // ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
 
         // String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2022-06-12&end_date=2022-06-14";
-        String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java/api/NASA-APOD.json";
+        String url = "https://matheus-vieiras-imersao-java.herokuapp.com/linguagens";
         ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
 
         var http = new ClienteHttp();
@@ -24,7 +24,7 @@ public class App {
 
         var geradora = new GeradoraDeFigurinhas();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 5; i++) {
 
             Conteudo conteudo = conteudos.get(i);
 

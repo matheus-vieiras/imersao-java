@@ -15,7 +15,7 @@ public class ExtratorDeConteudoDaNasa implements ExtratorDeConteudo {
          for (Map<String, String> atributos : listaDeAtributos) {
 
             String titulo = atributos.get("title");
-            String urlImagem = atributos.get("url")
+            String urlImagem = atributos.get("image")
                     .replaceAll("(@+)(.*).jpg$", "$1.jpg");
             var conteudo = new Conteudo(titulo, urlImagem);
  
